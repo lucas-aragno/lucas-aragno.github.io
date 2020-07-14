@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lucas Aragno</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" type="text/css" href="vendor/milligram.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="icon" href="/e.png" type="image/png" />
+  </head>
+
+  <body>
+    <div class="container pt-1">
+      Hello there! I'm <strong>Lucas Aragno</strong> a software developer with approximated knowledge to many things. <br />
+
+      Been working on Software (professionally) since 2010 on different types of programs and applications, from desktop Java apps, Blackberry apps (remember those?) to cutting edge web technologies, IOT, Machine learning and all those buzzwords. <br/>
+
+      I've also been a speaker at different software events (RubyConf BR, Erlang/Elixir Factory lite BA, Node Summit, JSConf Colombia and several meetups). <br/>
+      
+      I tried to create some open source modules and templates that you can find on my <a href="https://github.com/lucas-aragno" alt="github link">github </a>.<br/>
+
+      Worked on as a developer several games, mostly during <a href="https://globalgamejam.org/" alt="global game jam link">global game jam</a> events but none of them are too good. <br/>
+
+      I'd rather talk about <a href="https://www.goodreads.com/user/show/53265228-lucas" alt="Good reads profile">books and comics </a> than software most of the time though.
+    </div>
+    <div class="container contact pt-1">
+      You can contact me at my email <a href="">lucas.aragno157@gmail.com</a>, my <a href="https://twitter.com/aragno157">twitter </a> or my discord: laragno#2336
+    </div>
+    <script type="text/javascript">
+      if (navigator.serviceWorker != null) {
+        navigator.serviceWorker.register('sw.js')
+        .then(function(registration) {
+          console.log('Registered events at scope: ', registration.scope);
+        });
+      }
+      fetch('./data.json')
+      var statusEl = document.querySelector('#network-status')
+      if (!navigator.onLine) {
+        statusEl.classList = ['is-offline']
+        statusEl.innerText = 'Offline'
+      }
+    </script>
+  </body>
+</html>
